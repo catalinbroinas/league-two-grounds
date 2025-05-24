@@ -16,11 +16,31 @@ body {
 
 // Typography
 .title {
-   @include title;
+   @include title(3.5rem, $secondary-light);
 }
+
 .sub-title {
-   @include sub-title;
+   @include sub-title(1.5rem, $secondary-light);
 }
+
 .text {
    @include text;
+}
+
+// Intro
+.intro {
+   height: 40vh;
+   background-image: url('../assets/img/cover.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center bottom;
+}
+
+// Styles
+.mask-intro {
+   background-color: rgba($color: $primary-dark, $alpha: 0.5);
+}
+
+.hr-intro {
+   @include hr-heading;
 }
