@@ -1,5 +1,6 @@
 import path from 'path';
 import imagemin from 'vite-plugin-imagemin';
+import react from '@vitejs/plugin-react';
 
 export default {
     base: './',
@@ -46,6 +47,7 @@ export default {
                     { cleanupIDs: false }
                 ]
             }
-        })
+        }),
+        react()
     ],
 }

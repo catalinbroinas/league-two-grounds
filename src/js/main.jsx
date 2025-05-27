@@ -2,7 +2,7 @@ import '../scss/main.scss';
 
 import { Ripple, Dropdown, Collapse, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
 
-import React, { createElement } from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 function MainDomManager() {
@@ -11,7 +11,7 @@ function MainDomManager() {
         if (!stadiumsElement) return;
 
         const root = createRoot(stadiumsElement);
-        root.render(React.createElement('h1', null, 'React work!'));
+        root.render(<h1 style={{color: 'blue'}}>React work!</h1>);
     };
 
     const initApp = () => {
