@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
-import { Ripple, initMDB } from 'mdb-ui-kit/js/mdb.es.min';
+import { Ripple, Tooltip, initMDB } from 'mdb-ui-kit/js/mdb.es.min';
 
 import mkStadium from '../assets/img/MKStadium.jpg';
 import mkLogo from '../assets/img/mkDons.avif';
 
 function StadiumCard() {
     useEffect(() => {
-        initMDB({ Ripple });
+        initMDB({ Ripple, Tooltip });
     }, []);
 
     return (
@@ -16,7 +16,7 @@ function StadiumCard() {
                 data-mdb-ripple-init=""
                 data-mdb-ripple-color="light"
             >
-                <img 
+                <img
                     src={mkStadium}
                     alt="Stadium MK"
                     className="w-100"
@@ -31,6 +31,8 @@ function StadiumCard() {
                     src={mkLogo}
                     alt="MK Dons"
                     className="team-logo"
+                    data-mdb-tooltip-init=""
+                    title='MK Dons'
                 />
                 <h3 className="card-title m-0">Stadium MK</h3>
             </div>
