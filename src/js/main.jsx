@@ -4,6 +4,7 @@ import { Ripple, Dropdown, Collapse, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import StadiumList from '../components/StadiumList';
 
 function MainDomManager() {
     const renderStadiums = () => {
@@ -11,7 +12,7 @@ function MainDomManager() {
         if (!stadiumsElement) return;
 
         const root = createRoot(stadiumsElement);
-        root.render(<h1 style={{color: 'blue'}}>React work!</h1>);
+        root.render(<StadiumList />);
     };
 
     const initApp = () => {
