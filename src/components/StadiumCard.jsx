@@ -19,17 +19,17 @@ function StadiumCard() {
                 </a>
             </div>
 
-            <div className="card-header">
+            <div className="card-header text-center border-0">
                 <img
                     src={mkLogo}
                     alt="MK Dons"
-                    className="team-icon"
+                    className="team-logo"
                 />
-                <h3 className="card-title">Stadium MK</h3>
+                <h3 className="card-title m-0">Stadium MK</h3>
             </div>
 
-            <div className="card-body">
-                <ul className="list-group">
+            <div className="card-body py-0">
+                <ul className="list-group list-group-light">
                     <li className="list-group-item">Capacity: 30.000</li>
                     <li className="list-group-item">Build: 2010</li>
                 </ul>

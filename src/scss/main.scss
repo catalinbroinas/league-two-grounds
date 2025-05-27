@@ -36,9 +36,32 @@ body {
    background-position: center bottom;
 }
 
+// Component
+.card-stadium {
+   .card-header {
+      position: relative;
+   }
+
+   .team-logo {
+      width: 3rem;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -80%);
+      background-color: $primary-light;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+   }
+}
+
 // Styles
 .mask-intro {
    background-color: rgba($color: $primary-dark, $alpha: 0.5);
+}
+
+.mask-light {
+   @include mask-light;
 }
 
 .hr-intro {
