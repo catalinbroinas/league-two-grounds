@@ -1,12 +1,19 @@
+import { useEffect } from 'react';
+import { Ripple, initMDB } from 'mdb-ui-kit/js/mdb.es.min';
+
 import mkStadium from '../assets/img/MKStadium.jpg';
 import mkLogo from '../assets/img/mkDons.avif';
 
 function StadiumCard() {
+    useEffect(() => {
+        initMDB({ Ripple });
+    }, []);
+
     return (
         <div className="card card-stadium h-100">
             <div
                 className="bg-image hover-overlay"
-                data-mdb-ripple-init
+                data-mdb-ripple-init=""
                 data-mdb-ripple-color="light"
             >
                 <img 
