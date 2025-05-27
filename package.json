@@ -19,6 +19,8 @@
     "vite-plugin-imagemin": "^0.6.1"
   },
   "dependencies": {
-    "mdb-ui-kit": "^8.0.0"
+    "mdb-ui-kit": "^8.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
