@@ -27,6 +27,14 @@ body {
    @include text;
 }
 
+.card-title {
+   @include sub-title;
+}
+
+.card-text {
+   @include text;
+}
+
 // Intro
 .intro {
    height: 40vh;
@@ -52,6 +60,10 @@ body {
       background-color: $primary-light;
       padding: 0.5rem;
       border-radius: 0.5rem;
+   }
+
+   .stadium-rank {
+      color: $primary-dark;
    }
 }
 

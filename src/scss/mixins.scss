@@ -5,7 +5,7 @@
     color: $color;
     font-size: $font-size;
 }
-@mixin sub-title($font-size: 1.5rem, $color: $secondary-dark) {
+@mixin sub-title($font-size: 1.5rem, $color: $secondary-main) {
     font-family: $font;
     font-weight: 600;
     color: $color;

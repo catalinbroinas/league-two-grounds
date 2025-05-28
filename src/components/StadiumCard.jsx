@@ -26,7 +26,7 @@ function StadiumCard() {
                 </a>
             </div>
 
-            <div className="card-header text-center border-0">
+            <div className="card-header text-center">
                 <img
                     src={mkLogo}
                     alt="MK Dons"
@@ -35,13 +35,42 @@ function StadiumCard() {
                     title='MK Dons'
                 />
                 <h3 className="card-title m-0">Stadium MK</h3>
+                <div
+                    className="d-inline-block stadium-rank"
+                    data-mdb-tooltip-init=""
+                    data-mdb-placement="bottom"
+                    title="Stadium rank"
+                    aria-label="Stadium rank"
+                >
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                </div>
             </div>
 
-            <div className="card-body py-0">
-                <ul className="list-group list-group-light">
-                    <li className="list-group-item">Capacity: 30.000</li>
-                    <li className="list-group-item">Build: 2010</li>
-                </ul>
+            <div className="card-body py-3">
+                <div className="d-flex justify-content-between align-items-center">
+                    <p className="card-text m-0">
+                        <i
+                            className="fas fa-users text-muted me-2"
+                            data-mdb-tooltip-init=""
+                            title="Capacity"
+                            aria-label="Capacity"
+                        ></i>
+                        30.000
+                    </p>
+
+                    <p className="card-text m-0">
+                        <i
+                            className="fas fa-calendar text-muted me-2"
+                            data-mdb-tooltip-init=""
+                            title="Inauguration year"
+                            aria-label="Inauguration year"
+                        ></i>
+                        2010
+                    </p>
+                </div>
             </div>
         </div>
     );
