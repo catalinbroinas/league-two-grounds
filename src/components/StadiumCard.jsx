@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { Ripple, Tooltip, initMDB } from 'mdb-ui-kit/js/mdb.es.min';
 
-import mkStadium from '../assets/img/MKStadium.jpg';
-import mkLogo from '../assets/img/mkDons.avif';
+function StadiumCard({ stadium, team }) {
+    const { name: stadiumName, image: stadiumImg, buildYear, capacity } = stadium;
+    const { name: teamName, image: teamImg } = team;
 
-function StadiumCard() {
     useEffect(() => {
         initMDB({ Ripple, Tooltip });
     }, []);
@@ -17,8 +17,8 @@ function StadiumCard() {
                 data-mdb-ripple-color="light"
             >
                 <img
-                    src={mkStadium}
-                    alt="Stadium MK"
+                    src={stadiumImg}
+                    alt={stadiumName}
                     className="w-100"
                 />
                 <a href="#!">
@@ -28,13 +28,13 @@ function StadiumCard() {
 
             <div className="card-header text-center">
                 <img
-                    src={mkLogo}
-                    alt="MK Dons"
+                    src={teamImg}
+                    alt={teamName}
                     className="team-logo"
                     data-mdb-tooltip-init=""
-                    title='MK Dons'
+                    title={teamName}
                 />
-                <h3 className="card-title m-0">Stadium MK</h3>
+                <h3 className="card-title m-0">{stadiumName}</h3>
                 <div
                     className="d-inline-block stadium-rank"
                     data-mdb-tooltip-init=""
@@ -58,7 +58,7 @@ function StadiumCard() {
                             title="Capacity"
                             aria-label="Capacity"
                         ></i>
-                        30.000
+                        {capacity}
                     </p>
 
                     <p className="card-text m-0">
@@ -68,7 +68,7 @@ function StadiumCard() {
                             title="Inauguration year"
                             aria-label="Inauguration year"
                         ></i>
-                        2010
+                        {buildYear}
                     </p>
                 </div>
             </div>
