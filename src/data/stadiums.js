@@ -11,7 +11,8 @@ const stadiums = [
             name: 'MK Stadium',
             image: mkStadium,
             buildYear: 2010,
-            capacity: 30000
+            capacity: 30000,
+            rank: 4.5
         },
         team: {
             name: 'MK Dons',
@@ -24,7 +25,8 @@ const stadiums = [
             name: 'Valley Parade',
             image: valleyParade,
             buildYear: 1886,
-            capacity: 25000
+            capacity: 25000,
+            rank: 3.5
         },
         team: {
             name: 'Bradford City',

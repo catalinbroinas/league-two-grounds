@@ -1,6 +1,31 @@
 import { useEffect } from 'react';
 import { Ripple, Tooltip, initMDB } from 'mdb-ui-kit/js/mdb.es.min';
 
+function StarRanking({ stadium }) {
+    const { rank } = stadium;
+    const stars = [];
+
+    for (let i = 0; i < Math.floor(rank); i++) {
+        stars.push(<i key={`full-${i}`} className="fas fa-star"></i>);
+    }
+
+    if (!Number.isInteger(rank)) {
+        stars.push(<i key={`half`} className="fas fa-star-half"></i>);
+    }
+
+    return (
+        <div
+            className="d-inline-block stadium-rank"
+            data-mdb-tooltip-init=""
+            data-mdb-placement="bottom"
+            title={`Stadium rank: ${rank}`}
+            aria-label={`Stadium rank: ${rank}`}
+        >
+            {stars}
+        </div>
+    );
+}
+
 function StadiumCard({ stadium, team }) {
     const { name: stadiumName, image: stadiumImg, buildYear, capacity } = stadium;
     const { name: teamName, image: teamImg } = team;
@@ -35,18 +60,7 @@ function StadiumCard({ stadium, team }) {
                     title={teamName}
                 />
                 <h3 className="card-title m-0">{stadiumName}</h3>
-                <div
-                    className="d-inline-block stadium-rank"
-                    data-mdb-tooltip-init=""
-                    data-mdb-placement="bottom"
-                    title="Stadium rank"
-                    aria-label="Stadium rank"
-                >
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                </div>
+                <StarRanking stadium={stadium} />
             </div>
 
             <div className="card-body py-3">
