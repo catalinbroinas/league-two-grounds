@@ -72,7 +72,7 @@ function StadiumCard({ stadium, team }) {
                             title="Capacity"
                             aria-label="Capacity"
                         ></i>
-                        {capacity}
+                        {capacity.toLocaleString()}
                     </p>
 
                     <p className="card-text m-0">
