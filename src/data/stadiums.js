@@ -4,11 +4,39 @@ const stadiums = [
     {
         id: crypto.randomUUID(),
         stadium: {
-            name: 'MK Stadium',
+            name: 'Wham Stadium	',
+            image: images.accringtonStanley.stadium,
+            buildYear: 1968,
+            capacity: 5450,
+            rank: 2
+        },
+        team: {
+            name: 'Accrington Stanley',
+            image: images.accringtonStanley.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'Plough Lane',
+            image: images.afcWimbledon.stadium,
+            buildYear: 2020,
+            capacity: 9215,
+            rank: 4
+        },
+        team: {
+            name: 'AFC Wimbledon',
+            image: images.afcWimbledon.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'Stadium MK',
             image: images.mkDons.stadium,
-            buildYear: 2010,
-            capacity: 30000,
-            rank: 4.5
+            buildYear: 2007,
+            capacity: 30500,
+            rank: 5
         },
         team: {
             name: 'MK Dons',
@@ -21,7 +49,7 @@ const stadiums = [
             name: 'Valley Parade',
             image: images.bradfordCity.stadium,
             buildYear: 1886,
-            capacity: 25000,
+            capacity: 24840,
             rank: 3.5
         },
         team: {
