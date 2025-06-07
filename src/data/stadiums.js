@@ -172,6 +172,48 @@ const stadiums = [
     {
         id: crypto.randomUUID(),
         stadium: {
+            name: 'Priestfield Stadium',
+            image: images.gillingham.stadium,
+            buildYear: 1893,
+            capacity: 11582,
+            rank: 3
+        },
+        team: {
+            name: 'Gillingham',
+            image: images.gillingham.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'Blundell Park',
+            image: images.grinsbyTown.stadium,
+            buildYear: 1899,
+            capacity: 9052,
+            rank: 2.5
+        },
+        team: {
+            name: 'Grimsby Town',
+            image: images.grinsbyTown.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'Wetherby Road',
+            image: images.harrogateTown.stadium,
+            buildYear: 1920,
+            capacity: 5000,
+            rank: 2
+        },
+        team: {
+            name: 'Harrogate Town',
+            image: images.harrogateTown.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
             name: 'Stadium MK',
             image: images.mkDons.stadium,
             buildYear: 2007,
@@ -181,6 +223,118 @@ const stadiums = [
         team: {
             name: 'MK Dons',
             image: images.mkDons.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'Mazuma Stadium',
+            image: images.morecambe.stadium,
+            buildYear: 2010,
+            capacity: 6476,
+            rank: 3
+        },
+        team: {
+            name: 'Morecambe',
+            image: images.morecambe.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'Rodney Parade',
+            image: images.newportCounty.stadium,
+            buildYear: 1877,
+            capacity: 8700,
+            rank: 1.5
+        },
+        team: {
+            name: 'Newport County',
+            image: images.newportCounty.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'Meadow Lane',
+            image: images.nottsCounty.stadium,
+            buildYear: 1910,
+            capacity: 19841,
+            rank: 3.5
+        },
+        team: {
+            name: 'Notts County',
+            image: images.nottsCounty.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'Vale Park',
+            image: images.portVale.stadium,
+            buildYear: 1950,
+            capacity: 15695,
+            rank: 4
+        },
+        team: {
+            name: 'Port Vale',
+            image: images.portVale.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'Moor Lane',
+            image: images.salfordCity.stadium,
+            buildYear: 1978,
+            capacity: 5108,
+            rank: 2.5
+        },
+        team: {
+            name: 'Salford City',
+            image: images.salfordCity.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'County Ground',
+            image: images.swidonTown.stadium,
+            buildYear: 1892,
+            capacity: 15728,
+            rank: 3
+        },
+        team: {
+            name: 'Swindon Town',
+            image: images.swidonTown.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'Prenton Park',
+            image: images.tranmereRovers.stadium,
+            buildYear: 1912,
+            capacity: 16587,
+            rank: 3.5
+        },
+        team: {
+            name: 'Tranmere Rovers',
+            image: images.tranmereRovers.team
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        stadium: {
+            name: 'Bescot Stadium',
+            image: images.walsall.stadium,
+            buildYear: 1990,
+            capacity: 11300,
+            rank: 4
+        },
+        team: {
+            name: 'Walsall',
+            image: images.walsall.team
         }
     }
 ];
