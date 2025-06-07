@@ -11,7 +11,18 @@ import jobServe from '../assets/img/stadiums/jobserve.jpg';
 import mornFlake from '../assets/img/stadiums/mornflake.jpg';
 import ecoPower from '../assets/img/stadiums/ecoPower2.jpg';
 import highburyStadium from '../assets/img/stadiums/highbury.jpg';
+import priestfieldStadium from '../assets/img/stadiums/prestfieldStadium.jpg';
+import blundellPark from '../assets/img/stadiums/blundell.jpg';
+import wheterbyRoad from '../assets/img/stadiums/wetherbyRoad.jpg';
 import mkStadium from '../assets/img/stadiums/stadiumMK1.jpg';
+import mazumaStadium from '../assets/img/stadiums/mazuma.jpg';
+import rodneyParade from '../assets/img/stadiums/rodneyParade.jpg';
+import meadowLane from '../assets/img/stadiums/meadowLane.jpg';
+import valePark from '../assets/img/stadiums/valePark.jpg';
+import peninsulaStadium from '../assets/img/stadiums/peninsula.jpg';
+import countyGround from '../assets/img/stadiums/countyGround.jpg';
+import prentonPark from '../assets/img/stadiums/prentonPark.jpg';
+import poundlandBeascot from '../assets/img/stadiums/poundland.jpg';
 
 // Teams
 import accringtonLogo from '../assets/img/teams/accrington.png';
@@ -26,7 +37,18 @@ import colchesterLogo from '../assets/img/teams/colchester.png';
 import creweLogo from '../assets/img/teams/crewe.png';
 import doncasterLogo from '../assets/img/teams/doncaster.png';
 import fleetwoodLogo from '../assets/img/teams/fletwood.png';
+import gillinghamLogo from '../assets/img/teams/gillingham.png';
+import grinsbyLogo from '../assets/img/teams/grunsby.png';
+import harrogateLogo from '../assets/img/teams/harrogate.png';
 import mkLogo from '../assets/img/teams/mk.png';
+import morecambeLogo from '../assets/img/teams/morecambe.avif';
+import newportLogo from '../assets/img/teams/newport.png';
+import nottsLogo from '../assets/img/teams/notts.png';
+import portValeLogo from '../assets/img/teams/portVale.png';
+import salfordLogo from '../assets/img/teams/salford.png';
+import swidonLogo from '../assets/img/teams/swidon.png';
+import tranmereLogo from '../assets/img/teams/tranmere.avif';
+import walsallLogo from '../assets/img/teams/walsall.png';
 
 const images = {
     accringtonStanley: {
@@ -77,9 +99,53 @@ const images = {
         stadium: highburyStadium,
         team: fleetwoodLogo
     },
+    gillingham: {
+        stadium: priestfieldStadium,
+        team: gillinghamLogo
+    },
+    grinsbyTown: {
+        stadium: blundellPark,
+        team: grinsbyLogo
+    },
+    harrogateTown: {
+        stadium: wheterbyRoad,
+        team: harrogateLogo
+    },
     mkDons: {
         stadium: mkStadium,
         team: mkLogo
+    },
+    morecambe: {
+        stadium: mazumaStadium,
+        team: morecambeLogo
+    },
+    newportCounty: {
+        stadium: rodneyParade,
+        team: newportLogo
+    },
+    nottsCounty: {
+        stadium: meadowLane,
+        team: nottsLogo
+    },
+    portVale: {
+        stadium: valePark,
+        team: portValeLogo
+    },
+    salfordCity: {
+        stadium: peninsulaStadium,
+        team: salfordLogo
+    },
+    swidonTown: {
+        stadium: countyGround,
+        team: swidonLogo
+    },
+    tranmereRovers: {
+        stadium: prentonPark,
+        team: tranmereLogo
+    },
+    walsall: {
+        stadium: poundlandBeascot,
+        team: walsallLogo
     }
 };
 
