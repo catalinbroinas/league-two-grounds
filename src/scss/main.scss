@@ -17,22 +17,35 @@ body {
 // Typography
 .title {
    @include title(3.5rem, $secondary-light);
+
+   @include media-breakpoint-down(md) {
+      font-size: 2.5rem;
+   }
 }
 
 .sub-title {
    @include sub-title(1.5rem, $secondary-light);
-}
 
-.text {
-   @include text;
+   @include media-breakpoint-down(md) {
+      font-size: 1.25rem;
+   }
 }
 
 .card-title {
    @include sub-title;
+
+   @include media-breakpoint-down(md) {
+      font-size: 1.1rem;
+   }
 }
 
+.text,
 .card-text {
    @include text;
+
+    @include media-breakpoint-down(md) {
+      font-size: 0.9rem;
+   }
 }
 
 // Intro
