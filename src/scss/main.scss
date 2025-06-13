@@ -42,6 +42,16 @@ body {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center bottom;
+
+   @include media-breakpoint-down(sm) {
+      height: 50vh;
+   }
+
+   @media (orientation: landscape) {
+      @include media-breakpoint-down(md) {
+         height: 60vh;
+      }
+   }
 }
 
 // Component
