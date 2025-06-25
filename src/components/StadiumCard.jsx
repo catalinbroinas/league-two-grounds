@@ -3,6 +3,20 @@ import { Ripple, Tooltip, initMDB } from 'mdb-ui-kit/js/mdb.es.min';
 
 function StarRanking({ stadium }) {
     const { rank } = stadium;
+    if (typeof rank !== 'number' || rank < 0.5 || rank > 5) {
+        return (
+            <div
+            className="d-inline-block stadium-rank"
+            data-mdb-tooltip-init=""
+            data-mdb-placement="bottom"
+            title={`Invalid stadium rank`}
+            aria-label={`Invalid stadium rank`}
+            >
+                <i className="fas fa-circle-exclamation text-danger"></i>
+            </div>
+        )
+    }
+
     const stars = [];
 
     for (let i = 0; i < Math.floor(rank); i++) {
@@ -10,7 +24,11 @@ function StarRanking({ stadium }) {
     }
 
     if (!Number.isInteger(rank)) {
-        stars.push(<i key={`half`} className="fas fa-star-half"></i>);
+        stars.push(<i key={`half`} className="fas fa-star-half-stroke"></i>);
+    }
+
+    while (stars.length < 5) {
+        stars.push(<i key={`empty-${stars.length}`} className="far fa-star"></i>);
     }
 
     return (
