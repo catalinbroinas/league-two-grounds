@@ -9,7 +9,6 @@ import react from '@vitejs/plugin-react';
 
 export default {
     base: './',
-    root: path.resolve(__dirname, 'src'),
     server: {
         port: 8080,
         hot: true
