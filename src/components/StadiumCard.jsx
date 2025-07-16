@@ -11,6 +11,7 @@ function StarRanking({ stadium }) {
             data-mdb-placement="bottom"
             title={`Invalid stadium rank`}
             aria-label={`Invalid stadium rank`}
+            role="img"
             >
                 <i className="fas fa-circle-exclamation text-danger"></i>
             </div>
@@ -38,6 +39,7 @@ function StarRanking({ stadium }) {
             data-mdb-placement="bottom"
             title={`Stadium rank: ${rank}`}
             aria-label={`Stadium rank: ${rank}`}
+            role="img"
         >
             {stars}
         </div>
@@ -64,7 +66,7 @@ function StadiumCard({ stadium, team }) {
                     alt={stadiumName}
                     className="w-100"
                 />
-                <a href="#!">
+                <a href="#!" aria-hidden="true">
                     <div className="mask mask-light"></div>
                 </a>
             </div>
@@ -77,7 +79,7 @@ function StadiumCard({ stadium, team }) {
                     data-mdb-tooltip-init=""
                     title={teamName}
                 />
-                <h3 className="card-title m-0">{stadiumName}</h3>
+                <h2 className="card-title m-0">{stadiumName}</h2>
                 <StarRanking stadium={stadium} />
             </div>
 
