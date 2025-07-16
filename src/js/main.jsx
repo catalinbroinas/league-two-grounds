@@ -1,8 +1,5 @@
 import '../scss/main.scss';
 
-import { Ripple, Dropdown, Collapse, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
-
-import React from 'react';
 import { createRoot } from 'react-dom/client';
 import StadiumList from '../components/StadiumList';
 
@@ -16,7 +13,6 @@ function MainDomManager() {
     };
 
     const initApp = () => {
-        initMDB({ Ripple, Dropdown, Collapse });
         renderStadiums();
     };
 
