@@ -1,5 +1,15 @@
 import { useEffect } from 'react';
 import { Ripple, Tooltip, initMDB } from 'mdb-ui-kit/js/mdb.es.min';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faStar,
+  faStarHalfStroke,
+  faUsers,
+  faCalendar,
+  faCircleExclamation,
+} from '@fortawesome/free-solid-svg-icons';
+
+import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
 
 function StarRanking({ stadium }) {
     const { rank } = stadium;
@@ -13,7 +23,7 @@ function StarRanking({ stadium }) {
             aria-label={`Invalid stadium rank`}
             role="img"
             >
-                <i className="fas fa-circle-exclamation text-danger"></i>
+                <FontAwesomeIcon icon={faCircleExclamation} className="text-danger" />
             </div>
         )
     }
@@ -21,15 +31,14 @@ function StarRanking({ stadium }) {
     const stars = [];
 
     for (let i = 0; i < Math.floor(rank); i++) {
-        stars.push(<i key={`full-${i}`} className="fas fa-star"></i>);
+        stars.push(<FontAwesomeIcon key={`full-${i}`} icon={faStar} />);
     }
-
     if (!Number.isInteger(rank)) {
-        stars.push(<i key={`half`} className="fas fa-star-half-stroke"></i>);
+        stars.push(<FontAwesomeIcon key={`half`} icon={faStarHalfStroke} />);
     }
 
     while (stars.length < 5) {
-        stars.push(<i key={`empty-${stars.length}`} className="far fa-star"></i>);
+        stars.push(<FontAwesomeIcon key={`half-${stars.length}`} icon={faStarRegular} />);
     }
 
     return (
@@ -86,22 +95,26 @@ function StadiumCard({ stadium, team }) {
             <div className="card-body py-3">
                 <div className="d-flex justify-content-between align-items-center">
                     <p className="card-text m-0">
-                        <i
-                            className="fas fa-users text-muted me-2"
+                        <span
+                            className="text-muted me-2"
                             data-mdb-tooltip-init=""
                             title="Capacity"
                             aria-label="Capacity"
-                        ></i>
+                            role="img">
+                                <FontAwesomeIcon icon={faUsers} />
+                        </span>
                         {capacity.toLocaleString()}
                     </p>
 
                     <p className="card-text m-0">
-                        <i
-                            className="fas fa-calendar text-muted me-2"
+                        <span
+                            className="text-muted me-2"
                             data-mdb-tooltip-init=""
                             title="Inauguration year"
                             aria-label="Inauguration year"
-                        ></i>
+                            role="img">
+                                <FontAwesomeIcon icon={faCalendar} />
+                        </span>
                         {buildYear}
                     </p>
                 </div>
