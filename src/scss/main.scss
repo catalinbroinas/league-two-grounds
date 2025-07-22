@@ -14,7 +14,13 @@ body {
    font-family: $font;
 }
 
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
 // Typography
+section h1,
 .title {
    @include title(3.5rem, $secondary-light);
 
