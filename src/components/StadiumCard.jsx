@@ -88,7 +88,7 @@ function StadiumCard({ stadium, team }) {
                 <StarRanking stadium={stadium} />
             </div>
 
-            <div className="card-body py-3">
+            <div className="card-body py-2">
                 <div className="d-flex justify-content-between align-items-center">
                     <p className="card-text m-0">
                         <span
