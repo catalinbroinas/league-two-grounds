@@ -57,7 +57,7 @@ function StarRanking({ stadium }) {
 
 function StadiumCard({ stadium, team }) {
     const { name: stadiumName, image: stadiumImg, buildYear, capacity } = stadium;
-    const { name: teamName, image: teamImg } = team;
+    const { name: teamName } = team;
 
     useEffect(() => {
         initMDB({ Ripple, Tooltip });
@@ -80,15 +80,11 @@ function StadiumCard({ stadium, team }) {
                 </a>
             </div>
 
-            <div className="card-header text-center">
-                <img
-                    src={teamImg}
-                    alt={teamName}
-                    className="team-logo"
-                    data-mdb-tooltip-init=""
-                    title={teamName}
-                />
-                <h2 className="card-title m-0">{stadiumName}</h2>
+            <div className="card-header pt-0 px-4 pb-2 text-center">
+                <h3 className="badge badge-primary badge-team rounded-pill py-2 px-3 m-0">
+                    {teamName}
+                </h3>
+                <h2 className="card-title mb-0 mt-n2">{stadiumName}</h2>
                 <StarRanking stadium={stadium} />
             </div>
 

@@ -84,16 +84,12 @@ section h1,
       position: relative;
    }
 
-   .team-logo {
-      width: 3rem;
-      height: auto;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -80%);
-      background-color: $primary-light;
-      padding: 0.5rem;
-      border-radius: 0.5rem;
+   .badge-team {
+      background-color: $primary-dark;
+      color: $secondary-light;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transform: translateY(-50%);
    }
 
    .stadium-rank {

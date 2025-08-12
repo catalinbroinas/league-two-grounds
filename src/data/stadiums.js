@@ -11,8 +11,7 @@ const stadiums = [
             rank: 2
         },
         team: {
-            name: 'Accrington Stanley',
-            image: images.accringtonStanley.team
+            name: 'Accrington Stanley'
         }
     },
     {
@@ -25,8 +24,7 @@ const stadiums = [
             rank: 4
         },
         team: {
-            name: 'AFC Wimbledon',
-            image: images.afcWimbledon.team
+            name: 'AFC Wimbledon'
         }
     },
     {
@@ -39,8 +37,7 @@ const stadiums = [
             rank: 1
         },
         team: {
-            name: 'Barrow AFC',
-            image: images.barrow.team
+            name: 'Barrow AFC'
         }
     },
     {
@@ -53,8 +50,7 @@ const stadiums = [
             rank: 3.5
         },
         team: {
-            name: 'Bradford City',
-            image: images.bradfordCity.team
+            name: 'Bradford City'
         }
     },
     {
@@ -67,8 +63,7 @@ const stadiums = [
             rank: 1.5
         },
         team: {
-            name: 'Bromley',
-            image: images.bromley.team
+            name: 'Bromley'
         }
     },
     {
@@ -81,8 +76,7 @@ const stadiums = [
             rank: 1.5
         },
         team: {
-            name: 'Carlisle United',
-            image: images.carlisleUnited.team
+            name: 'Carlisle United'
         }
     },
     {
@@ -95,8 +89,7 @@ const stadiums = [
             rank: 2.5
         },
         team: {
-            name: 'Cheltenham Town',
-            image: images.cheltenhamTown.team
+            name: 'Cheltenham Town'
         }
     },
     {
@@ -109,8 +102,7 @@ const stadiums = [
             rank: 4
         },
         team: {
-            name: 'Chesterfield',
-            image: images.chesterfield.team
+            name: 'Chesterfield'
         }
     },
     {
@@ -123,8 +115,7 @@ const stadiums = [
             rank: 3.5
         },
         team: {
-            name: 'Colchester United',
-            image: images.colchesterUnited.team
+            name: 'Colchester United'
         }
     },
     {
@@ -137,8 +128,7 @@ const stadiums = [
             rank: 2.5
         },
         team: {
-            name: 'Crewe Alexandra',
-            image: images.creweAlexandra.team
+            name: 'Crewe Alexandra'
         }
     },
     {
@@ -151,8 +141,7 @@ const stadiums = [
             rank: 4.5
         },
         team: {
-            name: 'Doncaster Rovers',
-            image: images.doncasterRovers.team
+            name: 'Doncaster Rovers'
         }
     },
     {
@@ -165,8 +154,7 @@ const stadiums = [
             rank: 2.5
         },
         team: {
-            name: 'Fleetwood Town',
-            image: images.fleetwoodTown.team
+            name: 'Fleetwood Town'
         }
     },
     {
@@ -179,8 +167,7 @@ const stadiums = [
             rank: 3
         },
         team: {
-            name: 'Gillingham',
-            image: images.gillingham.team
+            name: 'Gillingham'
         }
     },
     {
@@ -193,8 +180,7 @@ const stadiums = [
             rank: 2.5
         },
         team: {
-            name: 'Grimsby Town',
-            image: images.grinsbyTown.team
+            name: 'Grimsby Town'
         }
     },
     {
@@ -207,8 +193,7 @@ const stadiums = [
             rank: 2
         },
         team: {
-            name: 'Harrogate Town',
-            image: images.harrogateTown.team
+            name: 'Harrogate Town'
         }
     },
     {
@@ -221,8 +206,7 @@ const stadiums = [
             rank: 5
         },
         team: {
-            name: 'MK Dons',
-            image: images.mkDons.team
+            name: 'MK Dons'
         }
     },
     {
@@ -235,8 +219,7 @@ const stadiums = [
             rank: 3
         },
         team: {
-            name: 'Morecambe',
-            image: images.morecambe.team
+            name: 'Morecambe'
         }
     },
     {
@@ -249,8 +232,7 @@ const stadiums = [
             rank: 1.5
         },
         team: {
-            name: 'Newport County',
-            image: images.newportCounty.team
+            name: 'Newport County'
         }
     },
     {
@@ -263,8 +245,7 @@ const stadiums = [
             rank: 3.5
         },
         team: {
-            name: 'Notts County',
-            image: images.nottsCounty.team
+            name: 'Notts County'
         }
     },
     {
@@ -277,8 +258,7 @@ const stadiums = [
             rank: 4
         },
         team: {
-            name: 'Port Vale',
-            image: images.portVale.team
+            name: 'Port Vale'
         }
     },
     {
@@ -291,8 +271,7 @@ const stadiums = [
             rank: 2.5
         },
         team: {
-            name: 'Salford City',
-            image: images.salfordCity.team
+            name: 'Salford City'
         }
     },
     {
@@ -305,8 +284,7 @@ const stadiums = [
             rank: 3
         },
         team: {
-            name: 'Swindon Town',
-            image: images.swidonTown.team
+            name: 'Swindon Town'
         }
     },
     {
@@ -319,8 +297,7 @@ const stadiums = [
             rank: 3.5
         },
         team: {
-            name: 'Tranmere Rovers',
-            image: images.tranmereRovers.team
+            name: 'Tranmere Rovers'
         }
     },
     {
@@ -333,8 +310,7 @@ const stadiums = [
             rank: 4
         },
         team: {
-            name: 'Walsall',
-            image: images.walsall.team
+            name: 'Walsall'
         }
     }
 ];

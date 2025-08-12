@@ -24,128 +24,78 @@ import countyGround from '../assets/img/stadiums/countyGround.jpg';
 import prentonPark from '../assets/img/stadiums/prentonPark.jpg';
 import poundlandBeascot from '../assets/img/stadiums/poundland.jpg';
 
-// Teams
-import accringtonLogo from '../assets/img/teams/accrington.png';
-import wimbledonLogo from '../assets/img/teams/afcW.webp';
-import barrowLogo from '../assets/img/teams/barrow.png';
-import bradfordLogo from '../assets/img/teams/BradfordCity.png';
-import bromleyLogo from '../assets/img/teams/bromley.png';
-import carlisleLogo from '../assets/img/teams/carlisle.png';
-import cheltenhamLogo from '../assets/img/teams/cheltanham.png';
-import chesterfieldLogo from '../assets/img/teams/chesterfield.png';
-import colchesterLogo from '../assets/img/teams/colchester.png';
-import creweLogo from '../assets/img/teams/crewe.png';
-import doncasterLogo from '../assets/img/teams/doncaster.png';
-import fleetwoodLogo from '../assets/img/teams/fletwood.png';
-import gillinghamLogo from '../assets/img/teams/gillingham.png';
-import grinsbyLogo from '../assets/img/teams/grunsby.png';
-import harrogateLogo from '../assets/img/teams/harrogate.png';
-import mkLogo from '../assets/img/teams/mk.png';
-import morecambeLogo from '../assets/img/teams/morecambe.avif';
-import newportLogo from '../assets/img/teams/newport.png';
-import nottsLogo from '../assets/img/teams/notts.png';
-import portValeLogo from '../assets/img/teams/portVale.png';
-import salfordLogo from '../assets/img/teams/salford.png';
-import swidonLogo from '../assets/img/teams/swidon.png';
-import tranmereLogo from '../assets/img/teams/tranmere.avif';
-import walsallLogo from '../assets/img/teams/walsall.png';
-
 const images = {
     accringtonStanley: {
-        stadium: whamStadium,
-        team: accringtonLogo
+        stadium: whamStadium
     },
     afcWimbledon: {
-        stadium: cherryRed,
-        team: wimbledonLogo
+        stadium: cherryRed
     },
     barrow: {
-        stadium: holkerStreet,
-        team: barrowLogo
+        stadium: holkerStreet
     },
     bradfordCity: {
-        stadium: valleyParade,
-        team: bradfordLogo
+        stadium: valleyParade
     },
     bromley: {
-        stadium: hayesLane,
-        team: bromleyLogo
+        stadium: hayesLane
     },
     carlisleUnited: {
-        stadium: bruntonPark,
-        team: carlisleLogo
+        stadium: bruntonPark
     },
     cheltenhamTown: {
-        stadium: completelySuzuki,
-        team: cheltenhamLogo
+        stadium: completelySuzuki
     },
     chesterfield: {
-        stadium: smhGroup,
-        team: chesterfieldLogo
+        stadium: smhGroup
     },
     colchesterUnited: {
-        stadium: jobServe,
-        team: colchesterLogo
+        stadium: jobServe
     },
     creweAlexandra: {
-        stadium: mornFlake,
-        team: creweLogo
+        stadium: mornFlake
     },
     doncasterRovers: {
-        stadium: ecoPower,
-        team: doncasterLogo
+        stadium: ecoPower
     },
     fleetwoodTown: {
-        stadium: highburyStadium,
-        team: fleetwoodLogo
+        stadium: highburyStadium
     },
     gillingham: {
-        stadium: priestfieldStadium,
-        team: gillinghamLogo
+        stadium: priestfieldStadium
     },
     grinsbyTown: {
-        stadium: blundellPark,
-        team: grinsbyLogo
+        stadium: blundellPark
     },
     harrogateTown: {
-        stadium: wheterbyRoad,
-        team: harrogateLogo
+        stadium: wheterbyRoad
     },
     mkDons: {
-        stadium: mkStadium,
-        team: mkLogo
+        stadium: mkStadium
     },
     morecambe: {
-        stadium: mazumaStadium,
-        team: morecambeLogo
+        stadium: mazumaStadium
     },
     newportCounty: {
-        stadium: rodneyParade,
-        team: newportLogo
+        stadium: rodneyParade
     },
     nottsCounty: {
-        stadium: meadowLane,
-        team: nottsLogo
+        stadium: meadowLane
     },
     portVale: {
-        stadium: valePark,
-        team: portValeLogo
+        stadium: valePark
     },
     salfordCity: {
-        stadium: peninsulaStadium,
-        team: salfordLogo
+        stadium: peninsulaStadium
     },
     swidonTown: {
-        stadium: countyGround,
-        team: swidonLogo
+        stadium: countyGround
     },
     tranmereRovers: {
-        stadium: prentonPark,
-        team: tranmereLogo
+        stadium: prentonPark
     },
     walsall: {
-        stadium: poundlandBeascot,
-        team: walsallLogo
+        stadium: poundlandBeascot
     }
 };
 
