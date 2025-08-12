@@ -8,7 +8,7 @@ import imagemin from 'vite-plugin-imagemin';
 import react from '@vitejs/plugin-react';
 
 export default {
-    base: './',
+    base: '/league-two-grounds/',
     server: {
         port: 8080,
         hot: true
