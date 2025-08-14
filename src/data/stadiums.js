@@ -60,7 +60,7 @@ const stadiums = [
             image: images.bromley.stadium,
             buildYear: 1938,
             capacity: 5000,
-            rank: 1.5
+            rank: 1
         },
         team: {
             name: 'Bromley'
