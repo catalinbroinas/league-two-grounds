@@ -6,6 +6,7 @@ const __dirname = path.dirname(__filename);
 
 import imagemin from 'vite-plugin-imagemin';
 import react from '@vitejs/plugin-react';
+import purgecss from 'vite-plugin-purgecss';
 
 export default {
     base: '/league-two-grounds/',
@@ -52,6 +53,33 @@ export default {
                 ]
             }
         }),
-        react()
+        react(),
+        purgecss({
+            content: [
+                './index.html',
+                './src/**/*.{html,js,ts,vue,jsx,tsx}'
+            ],
+            safelist: [
+                /^modal/,
+                /^dropdown/,
+                /^collapse/,
+                /^show$/,
+                /^fade$/,
+                /^btn-/,
+                /^bg-/,
+                /^text-/,
+                /^ripple/,
+                /^tooltip/,
+                /^accordion/,
+                /^offcanvas/,
+                /^toast/,
+                /^alert/,
+                /^position-/,
+                /^top/,
+                /^bottom/,
+                /^start/,
+                /^end/
+            ]
+        })
     ],
 }
