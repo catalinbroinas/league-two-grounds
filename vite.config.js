@@ -16,6 +16,8 @@ export default {
     build: {
         outDir: 'dist',
         emptyOutDir: true,
+        minify: 'esbuild',
+        cssCodeSplit: true,
         rollupOptions: {
             output: {
                 assetFileNames: (assetInfo) => {
